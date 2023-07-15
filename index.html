@@ -11,7 +11,7 @@
 	<div id="container">
 		<h1>MBTI 2.0</h1>
 
-		<h2>O teste consiste de 10 pontos e é separado em 4 partes, sendo elas gostos, morais, situações e adjetivos</h2>
+		<h2>O teste consiste de 10 pontos e é separado em partes, sendo elas gostos, morais, situações e adjetivos</h2>
 
 		<button onclick="start()"><h4>Começar teste</h4></button>
 	</div>
@@ -21,110 +21,161 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity=	"sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script>
 	function start() {
-		alert(`Bem vindo, o teste vai ser feito inteiramente por aqui, se prepare que vamos começar. 
+		partes = [
+			[
+				{
+					"pergunta": "Cor do quarto do seu futuro filho",
+					"respostas": ['Azul']
+				},
+				{
+					"pergunta": "Penteado da sua filha de 6 anos",
+					"respostas": ['franjinha', 'franja', 'padrão', 'militar']
+				},
+				{
+					"pergunta": "Fim de um dia qualquer após o trabalho junto com seu namorado, qual será atividade",
+					"respostas": ['ar livre', 'cozy', 'sozinhos', 'conversar', 'jantar']
+				},
+				{
+					"pergunta": "Escritorio ou Campo, por que",
+					"respostas": []
+				},
+				{
+					"pergunta": "Em um sitío, qual parte é mais importante, e por que",
+					"respostas": []
+				}
+			],
+			[
+				{
+					"pergunta": "Seu filho deveria bater de volta no amigo que bateu nele",
+					"respostas": ['Sim']
+				},
+				{
+					"pergunta": "Se você está discutindo com alguem, é uma possibilidade sair como errado mesmo estando certo",
+					"respostas": ['Sim']
+				},
+				{
+					"pergunta": "Uma viajem para o Leste Europeu vale como uma viajem para Europa? dado que é uma oportunidade dentro do seu trabalho e não uma viajem que arquitetou",
+					"respostas": ['Sim']
+				},
+				{
+					"pergunta": "Uma mulher precisa nutrir da mesma forma que um homem precisa prover",
+					"respostas": ['Sim']
+				},
+				{
+					"pergunta": "O papel da mulher e do homem é o que eles quiserem ser",
+					"respostas": ['Não']
+				}
+			],
+			[
+				{
+					"pergunta": "Em quanto tempo você voltaria para casa dos seus país caso brigassem por conta da forma que cuida dos seus filhos? por que voltaria, ou por que não",
+					"respostas": ['Conversar', 'não terminar']
+				},
+				{
+					"pergunta": "Seu filho fica trancado no quarto por que você tirou o acesso dele a internet devido suas pessimas notas na escola pelo 2 bimestre seguido. Essa abordagem foi correta? e qual deveria ser a proxima para lidar com seu filho",
+					"respostas": ['disciplina']
+				},
+				{
+					"pergunta": "Você briga com seu colega do trabalho por falta de comprometimento dele vocês atrasam um deadline importante e que precedia uma possivel promoção, e ele sabia disso. Qual seria sua abordagem com seu colega nessa situação? E qual seria sua abordagem sobre o trabalho de vocês (2 frases)",
+					"respostas": [] 
+				},
+				{
+					"pergunta": "Quando com vontade de chorar após uma decepção na sua vida pessoal, estando no seu trabalho, qual sua abordagem enquanto lá e qual é a proxima após sair dele (2 frases)",
+					"respostas": [] 
+				},
+				{
+					"pergunta": "Como seu filho austista (descreva uma forma que se adapte para todos os niveis do aspectro) seria exposto ao ambiente externo ao seu nucleo familiar, e por que (2 frases)",
+					"respostas": [] 
+				}
+			],
+			[
+				{
+					"pergunta": "Mundo",
+					"respostas": ['Belo', 'Lindo', 'Maravilhoso']
+				},
+				{
+					"pergunta": "Vida",
+					"respostas": ['Belo', 'Lindo', 'Maravilhoso']
+				},
+				{
+					"pergunta": "Politica",
+					"respostas": [] 
+				},
+				{
+					"pergunta": "Economia",
+					"respostas": [] 
+				},
+				{
+					"pergunta": "Casamento",
+					"respostas": [] 
+				},
+				{
+					"pergunta": "Namoro",
+					"respostas": [] 
+				},
+				{
+					"pergunta": "Amor",
+					"respostas": [] 
+				},
+				{
+					"pergunta": "Pais",
+					"respostas": [] 
+				},
+				{
+					"pergunta": "País",
+					"respostas": [] 
+				},
+				{
+					"pergunta": "Juventude",
+					"respostas": []
+				}
+			],
+			[
+				{
+					"pergunta": "Fale um pouco sobre você, o que faz no seu dia-a-dia",
+					"respostas": ['estudando', 'estudo', 'rotina', 'famila', 'filho', 'pais']
+				},
+			]
+		]
 
-No final dele você tera um PDF com todas suas respostas e podera enviar ao comite do MBTI 2.0 para ser avaliado, após o envio dentro de 7 dias seu resultado vai ser enviado a você`);
-		
-		// Parte 1
-		alert(`
-@ Parte 1 - Gostos - 1.5 Pontos
-
-Instruções: Descreva com mais de 1 frase, mas não passe de 2 linhas`);
-	
-		var parte_1_1 = prompt(`1. Cor do quarto do seu futuro filho:`);
-		var parte_1_2 = prompt(`2. Penteado da sua filha de 6 anos:`);
-		var parte_1_3 = prompt(`3. Fim de um dia qualquer após o trabalho junto com seu namorado, qual será atividade:`);
-		var parte_1_4 = prompt(`4. Escritorio ou Campo, por que:`);
-		var parte_1_5 = prompt(`5. Em um sitío, qual parte é mais importante, e por que:`);
-		
-		// Parte 2
-		alert(`
-@ Parte 2 - Morais - 3.5 Pontos
-
-Instruções: Responda binariamente`);
-	
-		var parte_2_1 = prompt(`1. Seu filho deveria bater de volta no amigo que bateu nele:`);
-		var parte_2_2 = prompt(`2. Se você está discutindo com alguem, é uma possibilidade sair como errado mesmo estando certo:`);
-		var parte_2_3 = prompt(`3. Uma viajem para o Leste Europeu vale como uma viajem para Europa? dado que é uma oportunidade dentro do seu trabalho
-e não uma viajem que arquitetou:`);
-		var parte_2_4 = prompt(`4. Uma mulher precisa nutrir da mema forma que um homem precisa prover:`);
-		var parte_2_5 = prompt(`5. O papel da mulher e do homem é o que eles quiserem ser:`);
-	
-		// Parte 3
-		alert(`
-@ Parte 3 - Situações - 3.5 Pontos
-
-Instruções: Responda com uma frase`);
-	
-		var parte_3_1 = prompt(`1. Em quanto tempo você voltaria para casa dos seus país caso brigassem por conta da forma que cuida dos seus filhos? por que voltaria, ou por que não:`);
-		var parte_3_2 = prompt(`2. Seu filho fica trancado no quarto por que você tirou o acesso dele a internet devido suas pessimas notas na escola pelo 2 bimestre seguido. Essa abordagem foi correta? e qual deveria ser a proxima para lidar com seu filho:`);
-		var parte_3_3 = prompt(`3. Você briga com seu colega do trabalho por falta de comprometimento dele vocês atrasam um deadline importante e que precedia uma possivel promoção, e ele sabia disso. Qual seria sua abordagem com seu colega nessa situação? E qual seria sua abordagem sobre o trabalho de vocês (2 frases):`);
-		var parte_3_4 = prompt(`4. Quando com vontade de chorar após uma decepção na sua vida pessoal, estando no seu trabalho, qual sua abordagem enquanto lá e qual é a proxima após sair dele (2 frases):`);
-		var parte_3_5 = prompt(`5. Como seu filho austista (descreva uma forma que se adapte para todos os "niveis" do aspectro) seria exposto ao ambiente externo ao seu nucleo familiar, e por que (2 frases):`);
-
-		// Parte 4
-		alert(`
-@ Parte 4 - Adjetivos - 1.5 Pontos
-
-Instruções: Escreva um adjetivo para cada palavra`);
-	
-		var parte_4_1 = prompt(`1. Mundo`);
-		var parte_4_2 = prompt(`2. Vida`);
-		var parte_4_3 = prompt(`3. Politica`);
-		var parte_4_4 = prompt(`4. Economia`);
-		var parte_4_5 = prompt(`5. Casamento`);
-		var parte_4_6 = prompt(`6. Namoro`);
-		var parte_4_7 = prompt(`7. Amor`);
-		var parte_4_8 = prompt(`8. Pais`);
-		
-		var parte_4_9 = prompt(`9. País`);
-		var parte_4_10 = prompt(`10. Juventude`);
-		
-		// Outro
-		alert(`Esse teste é analisado "a posteriori" de forma praxologica dado os constrains que nos trouxeram até aqui.`);
-		
-		// Div do pdf gerado
 		var pdf = document.getElementById('pdf');
-		
-		// Insere dentro da div do PDF
-		pdf.innerHTML += "<h1>Parte 1</h1>";
-		pdf.innerHTML += '<p>' + parte_1_1 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_1_2 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_1_3 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_1_4 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_1_5 + '</p> \n';		
+		pdf.innerHTML += "<h1>Adequada 1, Não adequada 0</h1>";
+		pdf.innerHTML += "<h3>Minimo para ser considerado based: 5</h3>";
 
-		pdf.innerHTML += "<h1>Parte 2</h1>";
-		pdf.innerHTML += '<p>' + parte_2_1 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_2_2 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_2_3 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_2_4 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_2_5 + '</p> \n';	
+		var total = 0;
+		var perguntas = 0;
+		partes.forEach((parte, i) => {
+			pdf.innerHTML += "<h1>Parte " + (i + 1) + "</h1>";
+			var parte_total = 0;
+			parte.forEach((pergunta, c) => {
+				var resposta = prompt(pergunta.pergunta)
+				var resposta_resultado = 0;
+				pergunta.respostas.forEach((resposta) => {
+					if (resposta.toLowerCase().includes(resposta.toLowerCase())) {
+						resposta_resultado = 1;
+					}
+				})
+				parte_total += 1;
+				pdf.innerHTML += '<p><b>Pergunta ' + (c + 1) + '</b></p>';
+				pdf.innerHTML += '<p>Pergunta: ' + pergunta.pergunta + '</p>';
+				pdf.innerHTML += '<p>Resposta: ' + resposta + '</p>';
+				pdf.innerHTML += '<p>Resultado: <b>' + resposta_resultado + '</b></p>';
+				pdf.innerHTML += '<p>Respostas esperadas: ' + pergunta.respostas + '</p>';
+				pdf.innerHTML += '<br>';	
+			})
+			pdf.innerHTML += "<p><b>Total da parte: " + parte_total + "/" + parte.length + "</b></p>";
+			total += parte_total;
+			perguntas += parte.length;
+		})
 
-		pdf.innerHTML += "<h1>Parte 3</h1>";
-		pdf.innerHTML += '<p>' + parte_3_1 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_3_2 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_3_3 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_3_4 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_3_5 + '</p> \n';		
-		
-		pdf.innerHTML += "<h1>Parte 4</h1>";
-		pdf.innerHTML += '<p>' + parte_4_1 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_4_2 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_4_3 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_4_4 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_4_5 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_4_6 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_4_7 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_4_8 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_4_9 + '</p> \n';
-		pdf.innerHTML += '<p>' + parte_4_10 + '</p> \n';		
-		
-		// salvar PDF	
+		pdf.innerHTML += "<h1>Total: " + total + "/" + perguntas + "</h1>";
+		if (total > 5) {
+			pdf.innerHTML += "<h1>Parabens, você é BASED!!!!!!</h1>";
+		} else {
+			pdf.innerHTML += "<h1>você NÃO é based, mas ainda é possivel se tornar, segue o link do livro aprioritico: ...</h1>";
+		}
+
 		html2pdf(pdf);
-		
-		alert("Por favor enviei seu resultado em PDF para o conselho do MBTI 2.0 e enviaremos seu resultado");
-
-	}
+	}	
 	</script>
 </html>
