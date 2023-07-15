@@ -155,7 +155,9 @@
 						resposta_resultado = 1;
 					}
 				})
-				parte_total += 1;
+				if (resposta_resultado == 1) {
+					parte_total += 1;
+				}
 				pdf.innerHTML += '<p><b>Pergunta ' + (c + 1) + '</b></p>';
 				pdf.innerHTML += '<p>Pergunta: ' + pergunta.pergunta + '</p>';
 				pdf.innerHTML += '<p>Resposta: ' + resposta + '</p>';
