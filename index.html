@@ -11,7 +11,7 @@
 	<div id="container">
 		<h1>MBTI 2.0</h1>
 
-		<h2>O teste consiste de 10 pontos e é separado em partes, sendo elas gostos, morais, situações e adjetivos</h2>
+		<h2>O teste consiste de pontos e é separado em partes, caso obter mais que a metade dos pontos você é based</h2>
 
 		<button onclick="start()"><h4>Começar teste</h4></button>
 	</div>
@@ -85,7 +85,7 @@
 				},
 				{
 					"pergunta": "Como seu filho austista (descreva uma forma que se adapte para todos os niveis do aspectro) seria exposto ao ambiente externo ao seu nucleo familiar, e por que (2 frases)",
-					"respostas": ['disciplina', 'foco', 'natureza'] 
+					"respostas": ['disciplina', 'estímulos', 'moldar', 'homescholling', 'fornecer', 'foco', 'natureza'] 
 				}
 			],
 			[
@@ -140,7 +140,7 @@
 
 		var pdf = document.getElementById('pdf');
 		pdf.innerHTML += "<h1>Adequada 1, Não adequada 0</h1>";
-		pdf.innerHTML += "<h3>Minimo para ser considerado based: 5</h3>";
+		pdf.innerHTML += "<h3>Minimo para ser considerado based: metade + 1</h3>";
 
 		var total = 0;
 		var perguntas = 0;
@@ -173,7 +173,7 @@
 		})
 
 		pdf.innerHTML += "<h1>Total: " + total + "/" + perguntas + "</h1>";
-		if (total > 5) {
+		if (total > (perguntas / 2)) {
 			pdf.innerHTML += "<h1>Parabens, você é BASED!!!!!!</h1>";
 		} else {
 			pdf.innerHTML += "<h1>você NÃO é based, mas ainda é possivel se tornar, segue o link do livro aprioritico: ...</h1>";
