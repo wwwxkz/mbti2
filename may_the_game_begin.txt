@@ -1,0 +1,90 @@
+MBTI 2.0
+
+O teste consiste de 10 pontos e é separado em 4 partes, sendo 
+elas gostos, morais, situações e adjetivos
+
+@ Parte 1 - Gostos - 1.5 Pontos
+
+Instruções: Descreva com mais de 1 frase, mas não passe de 2 linhas
+
+	1. Cor do quarto do seu futuro filho: 
+
+	2. Penteado da sua filha de 6 anos:
+
+	3. Fim de um dia qualquer após o trabalho 
+	junto com seu namorado, qual será atividade?
+
+	4. Escritorio ou Campo, por que?
+
+	5. Em um sitío, qual parte é mais importante, e por que?
+
+@ Parte 2 - Morais - 3.5 Pontos
+
+Instruções: Responda binariamente
+
+	1. Seu filho deveria bater de volta no amigo que bateu nele?
+
+	2. Se você está discutindo com alguem, é uma possibilidade
+	sair como errado mesmo estando certo?
+	
+	3. Uma viajem para o Leste Europeu vale como uma viajem para
+	Europa? dado que é uma oportunidade dentro do seu trabalho
+	e não uma viajem que arquitetou
+
+	4. Uma mulher precisa nutrir da mema forma que um homem
+	precisa prover?
+
+	5. O papel da mulher e do homem é o que eles quiserem ser?
+
+@ Parte 3 - Situações - 3.5 Pontos
+
+Instruções: Responda com uma frase
+
+	1. Em quanto tempo você voltaria para casa dos seus país caso
+	brigassem por conta da forma que cuida dos seus filhos? por que
+	voltaria, ou por que não?
+
+	2. Seu filho fica trancado no quarto por que você tirou o 
+	acesso dele a internet devido suas pessimas notas na escola
+	pelo 2 bimestre seguido. Essa abordagem foi correta? e qual
+	deveria ser a proxima para lidar com seu filho?
+	
+	3. Você briga com seu colega do trabalho por falta de
+	comprometimento dele vocês atrasam um deadline importante e
+	que precedia uma possivel promoção, e ele sabia disso. Qual
+	seria sua abordagem com seu colega nessa situação? E qual seria sua abordagem sobre o trabalho de vocês (2 frases)?
+
+	4. Quando com vontade de chorar após uma decepção na sua vida
+	pessoal, estando no seu trabalho, qual sua abordagem enquanto lá
+	e qual é a proxima após sair dele (2 frases)?
+
+	5. Como seu filho austista (descreva uma forma que se adapte
+	para todos os "niveis" do aspectro) seria exposto ao ambiente
+	externo ao seu nucleo familiar, e por que (2 frases)?
+
+@ Parte 4 - Adjetivos - 1.5 Pontos
+
+Instruções: Escreva um adjetivo para cada palavra
+
+	1. Mundo: 
+
+	2. Vida: 
+	
+	3. Politica: 
+
+	4. Economia: 
+
+	5. Casamento: 
+	
+	6. Namoro:
+	
+	7. Amor: 
+	
+	8. Pais: 
+	
+	9. País: 
+	
+	10. Juventude: 
+	
+Esse teste é analisado "a posteriori" de forma praxologica dado 
+os constrains que nos trouxeram até aqui.
