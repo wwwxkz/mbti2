@@ -151,8 +151,10 @@
 				var resposta = prompt(pergunta.pergunta)
 				var resposta_resultado = 0;
 				pergunta.respostas.forEach((resposta) => {
-					if (resposta.toLowerCase().includes(resposta.toLowerCase())) {
-						resposta_resultado = 1;
+					if (resposta !== "" && resposta !==  " ") {
+						if (resposta.toLowerCase().includes(resposta.toLowerCase())) {
+							resposta_resultado = 1;
+						}
 					}
 				})
 				if (resposta_resultado == 1) {
