@@ -150,9 +150,9 @@
 			parte.forEach((pergunta, c) => {
 				var resposta = prompt(pergunta.pergunta)
 				var resposta_resultado = 0;
-				pergunta.respostas.forEach((resposta) => {
+				pergunta.respostas.forEach((resposta_esperada) => {
 					if (resposta !== "" && resposta !==  " ") {
-						if (resposta.toLowerCase().includes(resposta.toLowerCase())) {
+						if (resposta.toLowerCase().includes(resposta_esperada.toLowerCase())) {
 							resposta_resultado = 1;
 						}
 					}
